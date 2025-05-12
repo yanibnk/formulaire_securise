@@ -1,0 +1,5 @@
+node_modules/
+config/*.pem
+logs/
+data/messages.json
+.env

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Connexion utilisateur</title>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <h2>Connexion</h2>
+  <form method="POST" action="/login">
+    <label>Email :</label><br>
+    <input type="email" name="email" required><br><br>
+    <label>Mot de passe :</label><br>
+    <input type="password" name="password" required><br><br>
+
+    <!-- reCAPTCHA -->
+    <div class="g-recaptcha" data-sitekey="6LdbsTYrAAAAADAnBg5LARnTjjlQbrtkOoXMYo1B"></div><br>
+
+    <button type="submit">Se connecter</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire sécurisé</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <h1>Formulaire de contact sécurisé</h1>
+  <form id="contact-form" method="POST" action="/submit">
+    <label for="name">Nom :</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email :</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Message :</label><br>
+    <textarea id="message" name="message" required></textarea><br><br>
+
+    <!-- reCAPTCHA -->
+    <div class="g-recaptcha" data-sitekey="6LdbsTYrAAAAADAnBg5LARnTjjlQbrtkOoXMYo1B"></div>
+
+
+
+    <button type="submit">Envoyer</button>
+  </form>
+
+  <script src="form.js" defer></script>
+
+</body>
+</html>

@@ -19,6 +19,8 @@ Logging : Suivi des messages reçus avec logs d’accès
  Structure du projet
 
 formulaire_securise/
+
+
 ├── config/              # Certificat HTTPS
 ├── data/                # Messages et utilisateurs
 ├── logs/                # Logs d’accès
